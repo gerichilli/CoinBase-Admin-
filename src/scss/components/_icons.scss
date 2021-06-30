@@ -1,0 +1,19 @@
+.icon {
+  stroke: var(--base-color);
+  fill: transparent;
+
+  &--sm {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  &--md {
+    width: 1.8em;
+    height: 1.8em;
+  }
+
+  &--gradient {
+    // fill: url(#gradient-svg);
+    stroke: url(#gradient-svg);
+  }
+}

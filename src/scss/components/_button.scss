@@ -1,0 +1,27 @@
+button {
+  background: transparent;
+  border: none;
+}
+
+.border-gradient {
+  border: 1px solid transparent;
+  border-radius: var(--curved);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: -1;
+    margin: -1px;
+    border-radius: inherit;
+    background-image: var(--gradient);
+  }
+
+  //   & input {
+  //     border-radius: var(--curved);
+  //   }
+}

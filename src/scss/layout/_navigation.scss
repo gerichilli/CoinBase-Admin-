@@ -1,0 +1,26 @@
+.navigation {
+  max-width: 25em;
+  padding-top: 2.5em;
+  padding-right: 1.5em;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  border-right: var(--layout-border);
+  background: var(--panel-bg);
+
+  &__item {
+    text-decoration: none;
+    @include flex(row, center, null);
+    width: calc(15em + 2vw);
+    padding: 1.5em 0 1.5em var(--sp-left);
+
+    &--active {
+      background-image: var(--gradient);
+      color: var(--active-color);
+    }
+  }
+
+  &__title {
+    margin-left: 1.5em;
+  }
+}

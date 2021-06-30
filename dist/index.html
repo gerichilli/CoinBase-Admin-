@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gerichilli">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css?v=&lt;?= time(); ?&gt;">
+    <script defer="defer" src="./js/script.js"></script>
+  </head>
+  <body>
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+      <lineargradient id="gradient-svg" x2="1" y2="1">
+        <stop offset="0%" stop-color="var(--color-stop-1)"></stop>
+        <stop offset="100%" stop-color="var(--color-stop-2)"></stop>
+      </lineargradient>
+    </svg>
+    <header class="header">
+      <div class="header__left"> 
+        <div class="header__logo"> <img src="./img/logo_light.png" alt="logo"></div>
+      </div>
+      <div class="header__right"> 
+        <form class="header__search border-gradient" action="#">
+          <button class="icon--wrapper header__loupe"> 
+            <svg class="icon icon--sm"> 
+              <use xlink:href="img/iconsprite.svg#loupe"></use>
+            </svg>
+          </button>
+          <input class="input input--curved input--block" type="search" placeholder="Search e.g card">
+        </form>
+        <div class="header__base"> 
+          <div class="header__icon"> <img src="./img/bit.png" alt="logo"></div>
+          <div class="header__title">CoinBase</div>
+        </div>
+        <div class="header__noti">
+          <svg class="icon icon--md">
+            <use xlink:href="img/iconsprite.svg#notification"></use>
+          </svg>
+          <div class="header__noti-count">20</div>
+        </div>
+      </div>
+    </header>
+    <nav class="navigation"><a class="navigation__item navigation__item--active" href="./index.html">
+        <div class="navigation__icon"> 
+          <svg class="icon icon--sm">
+            <use xlink:href="img/iconsprite.svg#view"></use>
+          </svg>
+        </div>
+        <div class="navigation__title">Overview</div></a><a class="navigation__item" href="./users.html">
+        <div class="navigation__icon"> 
+          <svg class="icon icon--sm icon--gradient">
+            <use xlink:href="img/iconsprite.svg#user"></use>
+          </svg>
+        </div>
+        <div class="navigation__title">Users</div></a></nav>
+  </body>
+</html>

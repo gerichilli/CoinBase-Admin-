@@ -1,0 +1,64 @@
+.header {
+  --header-el-sp: 1.5em;
+  height: var(--header-height);
+  background: var(--panel-bg);
+  @include flex(row, center, null);
+  padding: 0 var(--sp-right) 0 var(--sp-left);
+  border-bottom: var(--layout-border);
+  position: relative;
+  z-index: 100;
+
+  &__right,
+  &__base {
+    @include flex(row, center, null);
+  }
+
+  &__right {
+    margin-left: auto;
+  }
+
+  &__search {
+    width: 42rem;
+    height: 4.2rem;
+    margin-right: var(--header-el-sp);
+    position: relative;
+    z-index: 1;
+
+    & input {
+      padding-left: 4.5em;
+    }
+  }
+
+  &__loupe {
+    position: absolute;
+    left: 2.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  &__base {
+    padding: 0.5em var(--header-el-sp);
+  }
+
+  &__noti {
+    position: relative;
+    cursor: pointer;
+    padding-left: var(--header-el-sp);
+  }
+
+  &__noti-count {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(25%, -25%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--active-color);
+    background: var(--gradient);
+    border-radius: var(--curved);
+    @include flex(row, center, center);
+  }
+}

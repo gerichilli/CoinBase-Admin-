@@ -1,0 +1,38 @@
+include includes/mixins/icon.pug
+
+doctype html
+html
+    include includes/head.pug
+    body
+        include includes/gradient-svg.pug
+        header.header
+            .header__left 
+                .header__logo 
+                    img(src="./img/logo_light.png", alt="logo")
+            .header__right 
+                form(action="#").header__search.border-gradient
+                    button.icon--wrapper.header__loupe 
+                        svg.icon.icon--sm 
+                            +icon('loupe') 
+                    input(type="search" placeholder="Search e.g card").input.input--curved.input--block
+                .header__base 
+                    .header__icon 
+                        img(src="./img/bit.png", alt="logo")
+                    .header__title CoinBase
+                .header__noti
+                    svg.icon.icon--md
+                        +icon('notification') 
+                    .header__noti-count 20
+        nav.navigation
+            a(href="./index.html").navigation__item.navigation__item--active
+                .navigation__icon 
+                    svg.icon.icon--sm
+                        +icon('view') 
+                .navigation__title Overview
+            a(href="./users.html").navigation__item
+                .navigation__icon 
+                    svg.icon.icon--sm.icon--gradient
+                        +icon('user') 
+                .navigation__title Users
+                
+

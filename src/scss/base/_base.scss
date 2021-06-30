@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Kano;
+  src: url(Kano.otf) format("opentype");
+}
+
+:root {
+  --color-stop-1: #fd749b;
+  --color-stop-2: #281ac8;
+  --gradient: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  --alter-color: #c25ba8;
+  --base-color: #858585;
+  --panel-bg: #ffffff;
+  --body-bg: #fff9fe;
+  --active-color: #ffffff;
+  --active-bg: #5df888;
+  --warning-bg: #ff4949;
+  --pending-bg: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  --disabled-bg: #c4c4c4;
+  --input-border: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+
+  --curved: 100px;
+  --panel-radius: 10px;
+  --border-thin: 1px solid #f0f0f0;
+  --layout-border: 2px solid #f0f0f0;
+
+  --sp-left: 5em;
+  --sp-right: 8em;
+
+  --header-height: 6em;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: calc(0.5em + 0.2vw); //11.84px
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background: var(--body-bg);
+}
